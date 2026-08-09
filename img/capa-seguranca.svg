@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="Técnico em Segurança do Trabalho">
+<defs>
+<linearGradient id="f" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#16205C"/><stop offset="1" stop-color="#2A46B4"/></linearGradient>
+<pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M40 0H0v40" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/></pattern>
+</defs>
+<rect width="640" height="320" fill="url(#f)"/>
+<rect width="640" height="320" fill="url(#g)"/>
+<circle cx="530" cy="60" r="120" fill="rgba(255,255,255,.045)"/>
+<circle cx="70" cy="290" r="80" fill="rgba(255,255,255,.035)"/>
+<path d="M0 250h150l12-20 9 40 8-28 7 8h130l14-24 10 46 9-30 7 6h284"
+ fill="none" stroke="rgba(154,168,242,.4)" stroke-width="2" stroke-linecap="round"/>
+<g transform="translate(320,150)">
+<path d="M-62 22a62 62 0 0 1 124 0z" fill="none" stroke="#F3F4FA" stroke-width="7" stroke-linejoin="round"/>
+<path d="M-80 22h160" stroke="#F3F4FA" stroke-width="7" stroke-linecap="round"/>
+<path d="M-22 -40h44" stroke="rgba(255,255,255,.5)" stroke-width="5" stroke-linecap="round"/></g>
+</svg>

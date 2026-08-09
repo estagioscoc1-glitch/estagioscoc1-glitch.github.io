@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="Reciclagem em Enfermagem">
+<defs>
+<linearGradient id="f" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#0D1750"/><stop offset="1" stop-color="#1F369E"/></linearGradient>
+<pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M40 0H0v40" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/></pattern>
+</defs>
+<rect width="640" height="320" fill="url(#f)"/>
+<rect width="640" height="320" fill="url(#g)"/>
+<circle cx="530" cy="60" r="120" fill="rgba(255,255,255,.045)"/>
+<circle cx="70" cy="290" r="80" fill="rgba(255,255,255,.035)"/>
+<path d="M0 250h150l12-20 9 40 8-28 7 8h130l14-24 10 46 9-30 7 6h284"
+ fill="none" stroke="rgba(154,168,242,.4)" stroke-width="2" stroke-linecap="round"/>
+<g transform="translate(320,150)" fill="none" stroke="#F3F4FA" stroke-width="6" stroke-linecap="round">
+<path d="M-66 -8a66 66 0 0 1 112-40"/><path d="M28 -60l20 12-12 20"/>
+<path d="M66 8a66 66 0 0 1-112 40"/><path d="M-28 60l-20-12 12-20"/>
+<path d="M-18 0h36M0 -18v36" opacity=".6"/></g>
+</svg>
