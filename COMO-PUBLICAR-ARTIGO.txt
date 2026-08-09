@@ -1,0 +1,46 @@
+COMO PUBLICAR UM ARTIGO NO BLOG
+Colégio Oswaldo Cruz
+
+1. Abra o arquivo:   ferramentas/novo-artigo.html
+   (dois cliques — abre no navegador)
+
+2. Preencha o formulário.
+   O endereço da página é preenchido sozinho a partir do título.
+
+3. Clique em "Gerar e baixar".
+   Baixam dois arquivos:
+     index.html        -> a página do artigo
+     blog-index.html   -> a lista do blog, já com o artigo novo
+
+4. No GitHub, no repositório do site:
+     a) Add file -> Upload files
+     b) No campo do nome, digite:  blog/o-endereco-do-artigo/index.html
+        (a ferramenta mostra o caminho exato na tela)
+     c) Suba o index.html do artigo
+     d) Suba o blog-index.html, renomeado para index.html,
+        substituindo o que está em blog/
+     e) Commit changes
+
+5. Em cerca de 1 minuto o artigo está no ar.
+
+6. Depois de publicar, avise o Google:
+   Search Console -> Inspeção de URL -> cole o endereço -> Solicitar indexação
+
+
+REGRAS DE OURO PARA O ARTIGO RENDER NO GOOGLE
+
+- O título deve ser a pergunta que a pessoa digita no Google.
+  Bom:  "Quanto ganha um técnico em radiologia?"
+  Ruim: "Reflexões sobre a carreira em radiologia"
+
+- Sempre preencha a "Resposta rápida".
+  É esse bloco que aparece em destaque no Google.
+
+- Use subtítulos em forma de pergunta (## no texto).
+
+- Cite pelo menos um número concreto. Número gera confiança.
+
+- Coloque de 2 a 3 links para páginas de curso dentro do texto.
+  Formato:  [texto do link](/cursos/tecnico-em-enfermagem-goiania)
+
+- 2 artigos por mês. Constância vale mais que volume.
