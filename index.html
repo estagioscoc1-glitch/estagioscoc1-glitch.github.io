@@ -415,7 +415,7 @@ footer a:hover{color:var(--ambar)}
 .cracha{opacity:0;transform:translateY(14px);animation:sobe .8s cubic-bezier(.16,.84,.28,1) 1.1s forwards}
 
 .hero__grade{will-change:transform}
-.hero__in{will-change:transform,opacity}
+.hero__in{will-change:transform}
 
 /* letreiro */
 .ticker{position:relative;background:var(--azul-900);border-top:1px solid var(--linha);overflow:hidden;padding:15px 0}
@@ -889,9 +889,9 @@ footer a:hover{color:var(--ambar)}
   function parallax(){
     var y=scrollY;
     if(y<900){
-      if(grade) grade.style.transform='translateY('+(y*.28)+'px)';
+      if(grade) grade.style.transform='translateY('+(y*.18)+'px)';
       if(foto)  foto.style.transform='translateY('+(y*.07)+'px)';
-      if(heroIn){heroIn.style.transform='translateY('+(y*.14)+'px)';heroIn.style.opacity=Math.max(0,1-y/620)}
+      if(heroIn){heroIn.style.transform='translateY('+(y*.05)+'px)'}
     }
     tick=false;
   }
