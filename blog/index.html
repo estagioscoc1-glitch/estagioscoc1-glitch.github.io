@@ -13,10 +13,10 @@
 
 <style>
 :root{
-  --azul-900:#131E6B;--azul-800:#1B2785;--azul-500:#2540C8;--azul-300:#9AA8F2;
-  --ambar:#F2A93B;--ambar-esc:#D98E1F;--osso:#F3F4FA;--tinta:#111336;--cinza:#5D6288;
-  --linha:rgba(255,255,255,.10);--linha-esc:rgba(19,21,60,.14);
-  --display:"Bricolage Grotesque",system-ui,sans-serif;--corpo:"Inter",system-ui,sans-serif;--dado:"IBM Plex Mono",monospace;
+--azul-900:#131E6B;--azul-800:#1B2785;--azul-500:#2540C8;--azul-300:#9AA8F2;
+--ambar:#F2A93B;--ambar-esc:#D98E1F;--osso:#F3F4FA;--tinta:#111336;--cinza:#5D6288;
+--linha:rgba(255,255,255,.10);--linha-esc:rgba(19,21,60,.14);
+--display:"Bricolage Grotesque",system-ui,sans-serif;--corpo:"Inter",system-ui,sans-serif;--dado:"IBM Plex Mono",monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:var(--corpo);background:var(--osso);color:var(--tinta);line-height:1.65;font-size:16.5px}
@@ -114,11 +114,11 @@ footer a:hover{color:var(--ambar)}
 
 /* menu de celular */
 .menu-btn{display:none;width:46px;height:46px;border-radius:13px;border:1px solid var(--linha);
-  background:rgba(255,255,255,.07);align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
+background:rgba(255,255,255,.07);align-items:center;justify-content:center;flex-shrink:0;cursor:pointer}
 .menu-btn i{display:block;width:20px;height:2px;background:var(--osso);border-radius:2px;position:relative;
-  transition:background .2s}
+transition:background .2s}
 .menu-btn i::before,.menu-btn i::after{content:"";position:absolute;left:0;width:20px;height:2px;
-  background:var(--osso);border-radius:2px;transition:transform .3s cubic-bezier(.2,.8,.25,1),top .3s}
+background:var(--osso);border-radius:2px;transition:transform .3s cubic-bezier(.2,.8,.25,1),top .3s}
 .menu-btn i::before{top:-6px}
 .menu-btn i::after{top:6px}
 .menu-btn.on i{background:transparent}
@@ -126,14 +126,14 @@ footer a:hover{color:var(--ambar)}
 .menu-btn.on i::after{top:0;transform:rotate(-45deg)}
 
 .movel{position:fixed;left:0;right:0;top:0;z-index:99;background:var(--azul-900);
-  padding:104px 24px 36px;transform:translateY(-102%);
-  transition:transform .42s cubic-bezier(.2,.85,.25,1);
-  border-bottom:1px solid var(--linha);max-height:100dvh;overflow-y:auto;
-  box-shadow:0 30px 60px -20px rgba(4,8,32,.7)}
+padding:104px 24px 36px;transform:translateY(-102%);
+transition:transform .42s cubic-bezier(.2,.85,.25,1);
+border-bottom:1px solid var(--linha);max-height:100dvh;overflow-y:auto;
+box-shadow:0 30px 60px -20px rgba(4,8,32,.7)}
 .movel.on{transform:none}
 .movel a{display:flex;align-items:center;justify-content:space-between;
-  font-family:var(--display);font-size:1.3rem;font-weight:600;color:var(--osso);
-  padding:17px 2px;border-bottom:1px solid var(--linha);text-decoration:none}
+font-family:var(--display);font-size:1.3rem;font-weight:600;color:var(--osso);
+padding:17px 2px;border-bottom:1px solid var(--linha);text-decoration:none}
 .movel a::after{content:"›";font-family:var(--corpo);font-size:1.5rem;color:var(--azul-300);opacity:.7}
 .movel a:last-of-type{border-bottom:0}
 .movel .btn{margin-top:26px;width:100%;justify-content:center;font-size:1rem;padding:17px 24px}
@@ -142,142 +142,187 @@ footer a:hover{color:var(--ambar)}
 @media(max-width:1000px){.menu-btn{display:flex}}
 @media(min-width:1001px){.movel{display:none}}
 @media(max-width:820px){
-  .nav .nav__in > .btn-primario{display:none}
-  .nav .nav__in{gap:12px}
-  .menu-btn{width:44px;height:44px}
+.nav .nav__in > .btn-primario{display:none}
+.nav .nav__in{gap:12px}
+.menu-btn{width:44px;height:44px}
 }
 </style>
 </head>
 <body>
 
 <nav class="nav" id="nav">
-  <div class="wrap nav__in">
-    <a href="/" class="marca">
-      <img class="marca__cheia" src="/img/logo-empilhada-branca-web.png" alt="Colégio Oswaldo Cruz"><img class="marca__mini" src="/img/simbolo-branco-web.png" alt="Colégio Oswaldo Cruz">
-      
-    </a>
-    <div class="menu">
-      <a href="/cursos">Cursos</a>
-      <a href="/#mercado">Mercado</a>
-      <a href="/#escola">A escola</a>
-      <a href="/blog">Blog</a>
-      <a href="/#duvidas">Dúvidas</a>
-      <a href="https://colegiooswaldocruz-acw.alunoead.com.br/login/index.php">Portal do aluno</a>
-    </div>
-    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="movel"><i></i></button>
-    <a href="/cursos" class="btn">Ver cursos</a>
-  </div>
+<div class="wrap nav__in">
+<a href="/" class="marca">
+<img class="marca__cheia" src="/img/logo-empilhada-branca-web.png" alt="Colégio Oswaldo Cruz"><img class="marca__mini" src="/img/simbolo-branco-web.png" alt="Colégio Oswaldo Cruz">
+
+</a>
+<div class="menu">
+<a href="/cursos">Cursos</a>
+<a href="/#mercado">Mercado</a>
+<a href="/#escola">A escola</a>
+<a href="/blog">Blog</a>
+<a href="/#duvidas">Dúvidas</a>
+<a href="https://colegiooswaldocruz-acw.alunoead.com.br/login/index.php">Portal do aluno</a>
+</div>
+<button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="movel"><i></i></button>
+<a href="/cursos" class="btn">Ver cursos</a>
+</div>
 </nav>
 <div class="movel" id="movel">
-  <a href="/cursos">Cursos</a>
-  <a href="/#mercado">Mercado</a>
-  <a href="/#escola">A escola</a>
-  <a href="/blog">Blog</a>
-  <a href="/#duvidas">Dúvidas</a>
-  <a href="https://colegiooswaldocruz-acw.alunoead.com.br/login/index.php">Portal do aluno</a>
-  <a href="https://matriculasonline.colegiooswaldocruz.com.br/" class="btn btn-primario">Garantir minha vaga · R$ 45</a>
+<a href="/cursos">Cursos</a>
+<a href="/#mercado">Mercado</a>
+<a href="/#escola">A escola</a>
+<a href="/blog">Blog</a>
+<a href="/#duvidas">Dúvidas</a>
+<a href="https://colegiooswaldocruz-acw.alunoead.com.br/login/index.php">Portal do aluno</a>
+<a href="https://matriculasonline.colegiooswaldocruz.com.br/" class="btn btn-primario">Garantir minha vaga · R$ 45</a>
 </div>
 
-
 <header class="topo">
-  <div class="wrap">
-    <div class="topo__in">
-      <p class="eyebrow">Blog</p>
-      <h1>Antes de escolher a profissão, entenda a profissão.</h1>
-      <p>Salário, COREN, estágio, rotina real e mercado em Goiânia. Escrito por quem forma técnicos em saúde desde 1993 — sem promessa que a gente não possa cumprir.</p>
-    </div>
-    <div class="filtros" role="group" aria-label="Filtrar por categoria">
-      <button class="filtro ativo" data-cat="todos">Todos</button>
-      <button class="filtro" data-cat="carreira">Carreira e salário</button>
-      <button class="filtro" data-cat="enfermagem">Enfermagem</button>
-      <button class="filtro" data-cat="radiologia">Radiologia</button>
-      <button class="filtro" data-cat="seguranca">Segurança do trabalho</button>
-      <button class="filtro" data-cat="estudar">Como estudar</button>
-    </div>
-  </div>
+<div class="wrap">
+<div class="topo__in">
+<p class="eyebrow">Blog</p>
+<h1>Antes de escolher a profissão, entenda a profissão.</h1>
+<p>Salário, COREN, estágio, rotina real e mercado em Goiânia. Escrito por quem forma técnicos em saúde desde 1993 — sem promessa que a gente não possa cumprir.</p>
+</div>
+<div class="filtros" role="group" aria-label="Filtrar por categoria">
+<button class="filtro ativo" data-cat="todos">Todos</button>
+<button class="filtro" data-cat="carreira">Carreira e salário</button>
+<button class="filtro" data-cat="enfermagem">Enfermagem</button>
+<button class="filtro" data-cat="radiologia">Radiologia</button>
+<button class="filtro" data-cat="seguranca">Segurança do trabalho</button>
+<button class="filtro" data-cat="estudar">Como estudar</button>
+</div>
+</div>
 </header>
 
 <section>
-  <div class="wrap">
+<div class="wrap">
 
-    <a class="destaque rev" href="/blog/quanto-ganha-tecnico-de-enfermagem-em-goiania" data-cat="carreira">
-      <div class="destaque__txt">
-        <span class="selo">Mais lido</span>
-        <h2>Quanto ganha um técnico em enfermagem em Goiânia?</h2>
-        <p>O piso é R$ 3.325 — mas ele muda conforme a jornada, o turno e a especialização. Veja como a conta é feita de verdade.</p>
-        <time style="font-family:var(--dado);font-size:.72rem;color:var(--cinza);margin-top:16px">8 de agosto de 2026 · 6 min</time>
-      </div>
-      <img src="/img/curso-enfermagem.jpg" alt="Técnica em enfermagem em atendimento hospitalar">
-    </a>
+<a class="destaque rev" href="/blog/quanto-ganha-tecnico-de-enfermagem-em-goiania" data-cat="carreira">
+<div class="destaque__txt">
+<span class="selo">Mais lido</span>
+<h2>Quanto ganha um técnico em enfermagem em Goiânia?</h2>
+<p>O piso é R$ 3.325 — mas ele muda conforme a jornada, o turno e a especialização. Veja como a conta é feita de verdade.</p>
+<time style="font-family:var(--dado);font-size:.72rem;color:var(--cinza);margin-top:16px">8 de agosto de 2026 · 6 min</time>
+</div>
+<img src="/img/curso-enfermagem.jpg" alt="Técnica em enfermagem em atendimento hospitalar">
+</a>
 
-    <div class="posts" id="posts">
+<div class="posts" id="posts">
 
-    <p style="grid-column:1/-1;color:var(--cinza);font-size:.95rem;
-      background:#fff;border:1px dashed var(--linha-esc);border-radius:14px;padding:30px;text-align:center">
-      Novos artigos toda quinzena. Em breve: COREN-GO passo a passo, técnico em radiologia na prática
-      e como estudar trabalhando.</p>
-    </div>
-  </div>
+<a class="post rev" href="/blog/por-que-fazer-tecnico-em-enfermagem" data-cat="enfermagem">
+<div class="post__img"><img src="/img/curso-enfermagem.jpg" alt="Técnica em enfermagem em atendimento hospitalar"></div>
+<div class="post__txt">
+<span class="cat">Enfermagem</span>
+<h3>Por que fazer técnico em enfermagem?</h3>
+<p>Forma em 18 meses, tem piso salarial garantido por lei e mercado que não para de crescer. Veja o que pesa de verdade na decisão.</p>
+<time>22 de agosto de 2026 · 5 min</time>
+</div>
+</a>
+
+<a class="post rev" href="/blog/por-que-fazer-tecnico-em-radiologia" data-cat="radiologia">
+<div class="post__img"><img src="/img/curso-radiologia.jpg" alt="Equipamento de raio-x usado nas aulas do curso técnico em radiologia"></div>
+<div class="post__txt">
+<span class="cat">Radiologia</span>
+<h3>Por que fazer técnico em radiologia?</h3>
+<p>Remuneração mais alta, aposentadoria especial por insalubridade e mercado além do hospital. Veja os motivos que mais pesam.</p>
+<time>22 de agosto de 2026 · 4 min</time>
+</div>
+</a>
+
+<a class="post rev" href="/blog/por-que-fazer-tecnico-em-seguranca-do-trabalho" data-cat="seguranca">
+<div class="post__img"><img src="/img/curso-seguranca.jpg" alt="Profissional de segurança do trabalho realizando inspeção em ambiente industrial"></div>
+<div class="post__txt">
+<span class="cat">Segurança do trabalho</span>
+<h3>Por que fazer técnico em segurança do trabalho?</h3>
+<p>A NR-4 obriga empresas a contratar, a rotina é sem plantão e o salário pode passar de R$ 8 mil em coordenação.</p>
+<time>22 de agosto de 2026 · 5 min</time>
+</div>
+</a>
+
+<a class="post rev" href="/blog/vale-a-pena-fazer-instrumentacao-cirurgica" data-cat="enfermagem">
+<div class="post__img"><img src="/img/curso-instrumentacao.jpg" alt="Instrumentação cirúrgica sendo realizada em centro cirúrgico"></div>
+<div class="post__txt">
+<span class="cat">Especialização</span>
+<h3>Vale a pena fazer instrumentação cirúrgica?</h3>
+<p>Especialização de 6 meses para quem já é técnico em enfermagem. Veja o que faz, quanto ganha e se compensa o investimento.</p>
+<time>22 de agosto de 2026 · 4 min</time>
+</div>
+</a>
+
+<a class="post rev" href="/blog/como-tirar-o-coren-em-goias" data-cat="carreira">
+<div class="post__img"><img src="/img/curso-enfermagem.jpg" alt="Técnica em enfermagem em atendimento hospitalar"></div>
+<div class="post__txt">
+<span class="cat">Carreira e salário</span>
+<h3>Como tirar o COREN-GO passo a passo</h3>
+<p>Diploma na mão não é a mesma coisa que estar apto a trabalhar. Veja documentos, taxa e o passo a passo pelo SIGEN.</p>
+<time>23 de agosto de 2026 · 5 min</time>
+</div>
+</a>
+
+</div>
+</div>
 </section>
 
 <section class="fecho">
-  <div class="wrap">
-    <h2>Já sabe qual profissão quer?</h2>
-    <p>Turmas em formação em enfermagem, radiologia e segurança do trabalho. Matrícula por R$ 45.</p>
-    <a href="/cursos" class="btn">Ver cursos e turmas abertas</a>
-  </div>
+<div class="wrap">
+<h2>Já sabe qual profissão quer?</h2>
+<p>Turmas em formação em enfermagem, radiologia e segurança do trabalho. Matrícula por R$ 45.</p>
+<a href="/cursos" class="btn">Ver cursos e turmas abertas</a>
+</div>
 </section>
 
 <footer>
-  <div class="wrap">
-    <a href="/" class="marca" style="margin-bottom:14px"><img class="marca__cheia" src="/img/logo-empilhada-branca-web.png" alt="Colégio Oswaldo Cruz"><img class="marca__mini" src="/img/simbolo-branco-web.png" alt="Colégio Oswaldo Cruz"></a>
-    <p style="max-width:52ch">Rua 20, nº 796 — Centro, Goiânia / GO · <a href="https://wa.me/556232237602">(62) 3223-7602</a></p>
-    <div class="creditos">© 2026 Colégio Oswaldo Cruz</div>
-  </div>
+<div class="wrap">
+<a href="/" class="marca" style="margin-bottom:14px"><img class="marca__cheia" src="/img/logo-empilhada-branca-web.png" alt="Colégio Oswaldo Cruz"><img class="marca__mini" src="/img/simbolo-branco-web.png" alt="Colégio Oswaldo Cruz"></a>
+<p style="max-width:52ch">Rua 20, nº 796 — Centro, Goiânia / GO · <a href="https://wa.me/556232237602">(62) 3223-7602</a></p>
+<div class="creditos">© 2026 Colégio Oswaldo Cruz</div>
+</div>
 </footer>
 
 <a class="flutua" id="flutua" href="https://wa.me/556232237602" aria-label="Falar no WhatsApp">
-  <span class="flutua__eco" aria-hidden="true"></span>
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2.02c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01a9.82 9.82 0 0 0-7.01-2.89m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23h-.01c-1.48 0-2.93-.39-4.19-1.14l-.3-.18-3.12.82.83-3.04-.2-.32a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.26-8.24M8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.85-.87 2.07 0 1.22.89 2.39 1 2.56.14.17 1.76 2.67 4.25 3.73.59.27 1.05.42 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.27-.25-.14-1.47-.72-1.69-.81-.23-.08-.37-.12-.56.12-.16.25-.64.81-.78.97-.15.17-.29.19-.53.07-.26-.13-1.06-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.12-.24-.01-.39.11-.5.11-.11.27-.29.37-.44.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.11-.56-1.35-.77-1.84-.2-.48-.4-.42-.56-.43-.14 0-.3-.01-.47-.01"/></svg>
-  <span>Falar no WhatsApp</span>
+<span class="flutua__eco" aria-hidden="true"></span>
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2.02c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01a9.82 9.82 0 0 0-7.01-2.89m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23h-.01c-1.48 0-2.93-.39-4.19-1.14l-.3-.18-3.12.82.83-3.04-.2-.32a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.26-8.24M8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.85-.87 2.07 0 1.22.89 2.39 1 2.56.14.17 1.76 2.67 4.25 3.73.59.27 1.05.42 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.27-.25-.14-1.47-.72-1.69-.81-.23-.08-.37-.12-.56.12-.16.25-.64.81-.78.97-.15.17-.29.19-.53.07-.26-.13-1.06-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.12-.24-.01-.39.11-.5.11-.11.27-.29.37-.44.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.11-.56-1.35-.77-1.84-.2-.48-.4-.42-.56-.43-.14 0-.3-.01-.47-.01"/></svg>
+<span>Falar no WhatsApp</span>
 </a>
 
 <script>
 (function(){
-  var nav=document.getElementById('nav'),fl=document.getElementById('flutua');
-  function r(){var y=scrollY;nav.classList.toggle('fixa',y>40);fl.classList.toggle('ativo',y>320)}
-  addEventListener('scroll',r,{passive:true});r();
+var nav=document.getElementById('nav'),fl=document.getElementById('flutua');
+function r(){var y=scrollY;nav.classList.toggle('fixa',y>40);fl.classList.toggle('ativo',y>320)}
+addEventListener('scroll',r,{passive:true});r();
 
-  if('IntersectionObserver' in window){
-    var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');ob.unobserve(e.target)}})},{threshold:.1});
-    document.querySelectorAll('.rev').forEach(function(el){ob.observe(el)});
-  }else{document.querySelectorAll('.rev').forEach(function(el){el.classList.add('on')})}
+if('IntersectionObserver' in window){
+var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');ob.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.rev').forEach(function(el){ob.observe(el)});
+}else{document.querySelectorAll('.rev').forEach(function(el){el.classList.add('on')})}
 
-  var botoes=document.querySelectorAll('.filtro');
-  botoes.forEach(function(b){
-    b.addEventListener('click',function(){
-      botoes.forEach(function(x){x.classList.remove('ativo')});
-      b.classList.add('ativo');
-      var c=b.dataset.cat;
-      document.querySelectorAll('[data-cat]:not(.filtro)').forEach(function(card){
-        card.classList.toggle('oculto', c!=='todos' && card.dataset.cat!==c);
-      });
-    });
-  });
+var botoes=document.querySelectorAll('.filtro');
+botoes.forEach(function(b){
+b.addEventListener('click',function(){
+botoes.forEach(function(x){x.classList.remove('ativo')});
+b.classList.add('ativo');
+var c=b.dataset.cat;
+document.querySelectorAll('[data-cat]:not(.filtro)').forEach(function(card){
+card.classList.toggle('oculto', c!=='todos' && card.dataset.cat!==c);
+});
+});
+});
 })();
 
-  var mb=document.querySelector('.menu-btn'), mv=document.getElementById('movel');
-  if(mb&&mv){
-    function alterna(forcar){
-      var on = forcar!==undefined ? forcar : !mv.classList.contains('on');
-      mv.classList.toggle('on',on); mb.classList.toggle('on',on);
-      mb.setAttribute('aria-expanded',on);
-      document.body.style.overflow = on ? 'hidden' : '';
-    }
-    mb.addEventListener('click',function(){alterna()});
-    mv.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){alterna(false)})});
-    addEventListener('keydown',function(e){if(e.key==='Escape') alterna(false)});
-  }
+var mb=document.querySelector('.menu-btn'), mv=document.getElementById('movel');
+if(mb&&mv){
+function alterna(forcar){
+var on = forcar!==undefined ? forcar : !mv.classList.contains('on');
+mv.classList.toggle('on',on); mb.classList.toggle('on',on);
+mb.setAttribute('aria-expanded',on);
+document.body.style.overflow = on ? 'hidden' : '';
+}
+mb.addEventListener('click',function(){alterna()});
+mv.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){alterna(false)})});
+addEventListener('keydown',function(e){if(e.key==='Escape') alterna(false)});
+}
 </script>
 </body>
 </html>
